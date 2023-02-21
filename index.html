@@ -1,0 +1,67 @@
+<!--翻牌遊戲-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Game</title>
+  <!--icon-->
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3004/3004163.png" type="image/x-icon">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--font awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+  <!--css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="main-container" class="container-fluid mt-5">
+    <!--header-->
+    <div class="container d-flex flex-column align-items-end">
+      <h1 class="m-0 p-0 fw-bold"><i class="poker-icon me-2"></i>CARD GAME</h1>
+      <!--score / tries-->
+      <p class="m-0 p-0 h4">Score: <span id="score">0</span></p>
+      <p class="m-0 p-0">You've tried <span id="tries">0</span> times</p>
+      <!--cheat button-->
+      <button id="cheat-mode-btn" class="btn btn-success" style="font-size: 14px;">Cheat Mode <span
+          id="cheat-mode-text">OFF</span><i id="cheat-mode-icon" class="ms-1 fa-solid fa-eye"></i></button>
+    </div>
+
+
+    <!--Cards container-->
+    <div id="cards-container" class="container mt-4 d-flex flex-wrap justify-content-around">
+      <!--insert cards-->
+    </div>
+
+    <!--End Game Screen-->
+    <div id="end-game-screen" class="hide">
+      <h1>Congratulations!</h1>
+      <h4>Score: <span id="end-score">00</span></h4>
+      <h4>You've tried <span id="end-tries">00</span> times</h4>
+      <button id="play-again-btn" class="btn btn-primary mt-2">Play Again</button>
+    </div>
+
+    <!--end : main container-->
+  </div>
+
+  <!--footer-->
+  <div id="footer" class="d-flex justify-content-center align-items-center mt-5 bg-light">
+    <p class="text-secondary text" style="font-size: 14px;">This game is a project created for Alpha Camp's online courses.</p>
+  </div>
+
+
+
+  <!--script bootstrap bundle with popper-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!--my js-->
+  <script src="index.js"></script>
+</body>
+
+</html>
